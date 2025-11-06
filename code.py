@@ -3,7 +3,8 @@ import json
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
 from adafruit_hid.keycode import Keycode
-from digitalio import DigitalInOut
+import board
+from digitalio import DigitalInOut, Direction, Pull
 
 snippets = []
 with open('snippets.json') as f:
@@ -13,8 +14,9 @@ iteration = 0
 
 kbd = Keyboard(usb_hid.devices)
 layout = KeyboardLayoutUS(kbd)
-button = DigitalInOut(0)
-button.direction = button.Direction.INPUT
+button = DigitalInOut(board.gp12)
+button.direction = Direction.INPUT
+button.pull = Pull.UP
 
 while True:
     if not button.value:
