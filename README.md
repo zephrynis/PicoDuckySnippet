@@ -15,3 +15,6 @@ PicoDuckySnippet is code designed to be ran on the [PicoDucky](https://github.co
        "Snippet 3"
    ]
    ```
+
+## Why I made this
+I made this as part of the Hack Club PicoDucky YSWS event. I wanted a simple way to manage and use text snippets with the PicoDucky that would work on pretty much any device with a USB port, and this code provides that functionality. You can learn more about the event [here](https://picoducky.hackclub.com/).
