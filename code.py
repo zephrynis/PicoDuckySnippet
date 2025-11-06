@@ -1,5 +1,4 @@
 import usb_hid
-import time
 import json
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
