@@ -29,4 +29,4 @@ while True:
         snippet = snippets[iteration % len(snippets)]
         layout.write(snippet)
         iteration += 1
-    time.sleep(0.1)
+    time.sleep(0.3)
