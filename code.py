@@ -1,5 +1,6 @@
 import usb_hid
 import json
+import time
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
 from adafruit_hid.keycode import Keycode
@@ -28,3 +29,4 @@ while True:
         snippet = snippets[iteration]
         layout.write(snippet)
         iteration += 1
+    time.sleep(0.1)
