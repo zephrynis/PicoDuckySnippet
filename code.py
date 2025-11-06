@@ -15,7 +15,7 @@ iteration = 0
 
 kbd = Keyboard(usb_hid.devices)
 layout = KeyboardLayoutUS(kbd)
-button = DigitalInOut(board.gp12)
+button = DigitalInOut(board.GP12)
 button.direction = Direction.INPUT
 button.pull = Pull.UP
 
