@@ -26,7 +26,7 @@ while True:
             for _ in snippet:
                 kbd.press(Keycode.BACKSPACE)
                 kbd.release_all()
-        snippet = snippets[iteration]
+        snippet = snippets[iteration % len(snippets)]
         layout.write(snippet)
         iteration += 1
     time.sleep(0.1)
