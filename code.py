@@ -7,9 +7,25 @@ from adafruit_hid.keycode import Keycode
 import board
 from digitalio import DigitalInOut, Direction, Pull
 
+def validatejson(data):
+    if not isinstance(data, list):
+        return False, "Snippets must be a list, see github repo for details"
+    if len(data) == 0:
+        return False, "Snippets list cannot be empty"
+    for i, item in enumerate(data):
+        if not isinstance(item, str):
+            return False, f"Item at index {i} is not a string"
+    return True, "Valid"
+
 snippets = []
-with open('snippets.json') as f:
-    snippets = json.load(f)
+try:
+    with open('snippets.json') as f:
+        snippets = json.load(f)
+        is_valid, message = validatejson(snippets)
+        if not is_valid:
+            snippets = [f"Invalid json: {message}"]
+except Exception as e:
+    snippets = ["Error loading snippets: " + str(e)]
 
 iteration = 0
 
