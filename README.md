@@ -5,7 +5,7 @@
 PicoDuckySnippet is code designed to be ran on the [PicoDucky](https://github.com/Outdatedcandy92/PicoDucky), a USB Rubber Ducky style device based on the Raspberry Pi Pico. The code allows the PicoDucky to write out various user-defined snippets stored in the `snippets.json` file, writing specific ones based on the morse code they use.
 
 ## Preview
-![Demo of PicoDuckySnippet in action](https://hc-cdn.hel1.your-objectstorage.com/s/v3/7b2c82f5fd710aba5d6167d07901f9ec9b394a8e_picoduckysnippetpreview.mp4)
+https://hc-cdn.hel1.your-objectstorage.com/s/v3/7b2c82f5fd710aba5d6167d07901f9ec9b394a8e_picoduckysnippetpreview.mp4
 > I only realised after recording this that the footage was low resolution, sorry about that!
 
 ## How to Install
