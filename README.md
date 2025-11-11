@@ -6,6 +6,7 @@ PicoDuckySnippet is code designed to be ran on the [PicoDucky](https://github.co
 
 ## Preview
 ![Demo of PicoDuckySnippet in action](PicoDuckySnippetDemo.gif)
+> I only realised after recording this that the footage was low resolution, sorry about that!
 
 ## How to Install
 1. **Setup the PicoDucky**: Follow the instructions on the [PicoDucky GitHub page](https://github.com/Outdatedcandy92/PicoDucky#as-a-hid-device) to set up your PicoDucky as a HID Device.
